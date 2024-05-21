@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="htmlQuiz.css">
+</head>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    background-color: lightseagreen;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  
+    
+}
+hr{
+    margin-top: 27px;
+}
+#box{
+    border: solid 3px white;
+    height: 360px;
+    width: 40vw;
+    margin-top: 150px;
+    background-color: white;
+    text-align: center;
+    
+}
+h2{
+    margin-top: 20px;
+}
+.row{
+    padding:1vw;
+    line-height: 40px;
+   
+}
+ label{
+    font-size: 20px;
+}
+.btn button{
+padding: 1px;
+background-color: lightgreen;
+width: 20vw;
+height: 30px;
+margin-top: 20px;
+border-radius: 10px;
+font-weight: 500;
+font-size: 1.5vw;
+}
+@media (max-width:500px) {
+    body{
+        background-color:#ab93fa;
+    }
+    #box{
+        border: solid 3px white;
+        height: 380px;
+        width: 80vw;
+        margin-top: 150px;
+        background-color: white;
+        text-align: center;
+        
+    }
+    label{
+        font-size: 17px;
+    }
+    h2{
+        font-size:15px;
+    }
+    .row{
+        padding: 1vw;
+        line-height: 50px;
+        margin-top: 20px;
+        margin-left: -10px;
+       
+    }
+    .btn button{
+        width: 200px;
+        font-size: 20px;
+      margin: 28px 45px;
+        font-weight: 400;
+        text-align: center;
+        background-color: lightseagreen;  
+        color: white;      
+    }
+
+    
+}
+</style>
+<body>
+    <div class="main">
+        <div id="box">
+            <h2 id="quesBox">1).This is a Dammy question</h2><hr>
+            <div class="row">
+                <input class="option" id="option1" type="radio" value="a" name="option"/>
+                <label for="option1"> option 1</label><br>
+                <input class="option" id="option2" type="radio" value="b" name="option"/>
+                <label for="option2"> option 2</label><br>
+                <input class="option" id="option3" type="radio" value="c" name="option"/>
+                <label for="option3"> option 3</label><br>
+                <input class="option" id="option4" type="radio" value="d" name="option"/>
+                <label for="option4"> option 4</label>
+            </div>
+            <div class="btn">
+                <button onclick="submitQuiz()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="sqlQuiz.js"></script>
+</body>
+</html>
